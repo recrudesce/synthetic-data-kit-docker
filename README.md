@@ -21,6 +21,7 @@ Put all the files you want to ingest into `data/input/`
 Run `docker run -v "$(pwd)/data:/app/data" synthetic-data-kit-docker:latest`
 
 QA Pair training material will be in `data/curated` and will have the `_cleaned.json` suffix in the filename for each parsed input file.
+
 CoT training material will be in `data/generated` and will have the `_cot_examples.json` suffix in the filename for each parsed input file.
 
 All output files are in the Alpaca format.
