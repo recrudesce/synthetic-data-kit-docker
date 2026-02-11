@@ -3,7 +3,7 @@ A Dockerised version of [Meta's Synthetic Data Kit.](https://github.com/meta-lla
 
 Clone the repo
 
-By default this creates QA Pairs.
+This will create QA Pairs, as well as Chain of Thought (CoT) Reasoning examples.
 
 Run `docker build . -t synthetic-data-kit-docker:latest`
 
@@ -19,3 +19,8 @@ Copy the `config.yaml` file to `data/config.yaml` on your local disk.
 Put all the files you want to ingest into `data/input/`
 
 Run `docker run -v "$(pwd)/data:/app/data" synthetic-data-kit-docker:latest`
+
+QA Pair training material will be in `data/curated` and will have the `_cleaned.json` suffix in the filename for each parsed input file.
+CoT training material will be in `data/generated` and will have the `_cot_examples.json` suffix in the filename for each parsed input file.
+
+All output files are in the Alpaca format.
