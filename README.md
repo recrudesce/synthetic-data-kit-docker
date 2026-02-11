@@ -3,6 +3,8 @@ A Dockerised version of [Meta's Synthetic Data Kit.](https://github.com/meta-lla
 
 Clone the repo
 
+By default this creates QA Pairs.  If you want to output Chain of Thought reasoning, edit `entrypoint.sh` and change `--type qa` to `--type cot`
+
 Run `docker build . -t synthetic-data-kit-docker:latest`
 
 Make a directory called `data` somewhere on your local disk, and run the following command
