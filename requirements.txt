@@ -1,0 +1,7 @@
+pdfminer.six
+beautifulsoup4
+pytubefix
+youtube-transcript-api
+python-docx
+python-pptx
+synthetic-data-kit
