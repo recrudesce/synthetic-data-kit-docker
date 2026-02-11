@@ -1,5 +1,5 @@
 # synthetic-data-kit-docker
-A Dockerised version of Meta's Synthetic Data Kit.
+A Dockerised version of [Meta's Synthetic Data Kit.](https://github.com/meta-llama/synthetic-data-kit)
 
 Clone the repo
 
