@@ -18,7 +18,7 @@ Copy the `config.yaml` file to `data/config.yaml` on your local disk.
 
 Put all the files you want to ingest into `data/input/`
 
-Run `docker run -v "$(pwd)/data:/app/data" synthetic-data-kit-docker:latest`
+Run `docker run --rm -v "$(pwd)/data:/app/data" synthetic-data-kit-docker:latest`
 
 QA Pair training material will be in `data/curated` and will have the `_qa_pairs_cleaned.json` suffix in the filename for each parsed input file.
 
